@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //input vars
-    bool left;
-    bool right;
-    bool up;
-    bool down;
-    bool jump;
-    public bool use;
+    [HideInInspector]public bool left;
+    [HideInInspector]public bool right;
+    [HideInInspector]public bool up;
+    [HideInInspector]public bool down;
+    [HideInInspector]public bool jump;
+    [HideInInspector]public bool use;
 
     public bool end_game;
     [SerializeField] private float jumpForce;

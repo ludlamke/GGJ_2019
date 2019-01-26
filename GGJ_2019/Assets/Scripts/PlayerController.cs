@@ -58,8 +58,9 @@ public class PlayerController : MonoBehaviour
         if(other.tag == "Invintory_Item")
         {
            
-            GM.GetComponent<Invintory>().getItem(other.gameObject);
-            
+            //GM.GetComponent<Invintory>().getItem();
+            Destroy(other.gameObject);
+            //other.transform.position = new Vector2(0, 5000);
         }
     }
 

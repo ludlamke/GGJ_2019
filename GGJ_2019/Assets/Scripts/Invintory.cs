@@ -5,9 +5,9 @@ using UnityEngine;
 public class Invintory : MonoBehaviour
 {
    
-    public int number_of_things = 0;
+    public int number_of_things = 1;
 
-    public GameObject[] things;
+    public bool[] things; 
 
     // Start is called before the first frame update
     void Start()
@@ -21,13 +21,13 @@ public class Invintory : MonoBehaviour
        
     }
 
-    public void getItem(GameObject invintoryItem)
+    public void getItem(int invintoryItemID)
     {
+       
+       // number_of_things = number_of_things + 1;
         
-        number_of_things = number_of_things + 1;
         
-        
-            things[number_of_things - 1] = invintoryItem;
+            things[invintoryItemID] = true;
         
         
     }

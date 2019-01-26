@@ -45,13 +45,11 @@ public class PlayerController : MonoBehaviour
         if (left) { moveVector += Vector2.left; }
         if (right) { moveVector += Vector2.right; }
 
-        Debug.Log(moveVector);
-
         //Move
         transform.Translate(moveVector * speed);
 
         //Jump
-        if (jump) { rgb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); Debug.Log("Jumped"); };
+        if (jump) { rgb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); };
     }
 
     public void OnTriggerEnter2D(Collider2D other)

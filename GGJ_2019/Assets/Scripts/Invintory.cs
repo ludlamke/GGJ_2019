@@ -18,10 +18,14 @@ public class Invintory : MonoBehaviour
        
     }
 
-    public void getItem()
+    public void getItem(GameObject invintoryItem)
     {
-      
+        
         number_of_things = number_of_things + 1;
         things = new GameObject[number_of_things];
+        
+            things[number_of_things - 1] = invintoryItem;
+        
+        
     }
 }

@@ -56,10 +56,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        
         if(other.tag == "Invintory_Item")
         {
-            GM.GetComponent<Invintory>().getItem();
-            Destroy(other);
+           
+            GM.GetComponent<Invintory>().getItem(other.gameObject);
+            
         }
     }
 

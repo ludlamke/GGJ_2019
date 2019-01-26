@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 686883313522502710}
   - component: {fileID: 686883313522502857}
   - component: {fileID: 9047451502103564003}
+  - component: {fileID: 1752111384}
   m_Layer: 8
   m_Name: Renderer
   m_TagString: Untagged
@@ -185,6 +186,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6250f0eac54316c4b8e5dda091280ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1752111384
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686883313522502711}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7f65eb999a14e141b20bf21cb138374, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &686883314353520492
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,8 +316,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ed10a2e73513841b57c03a1c77fa62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left: 0
+  right: 0
+  up: 0
+  down: 0
+  jump: 0
   use: 0
   end_game: 0
+  invintoryInReatch: 0
+  indoorreatch: 0
   jumpForce: 4
   speed: 0.05
   GM: {fileID: 0}

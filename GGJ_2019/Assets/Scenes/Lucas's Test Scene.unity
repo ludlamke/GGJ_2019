@@ -436,44 +436,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 686883313522502857, guid: 4e49506a74d1c7a46b0c9dc7f9c272ed,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f50d3b51d3f6bdc499742cac0a97f133,
-        type: 3}
-    - target: {fileID: 442566837, guid: 4e49506a74d1c7a46b0c9dc7f9c272ed, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a02da76d356ab74c9a3e4fc9dd02205,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e49506a74d1c7a46b0c9dc7f9c272ed, type: 3}
---- !u!1 &1752111381 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 686883313522502711, guid: 4e49506a74d1c7a46b0c9dc7f9c272ed,
-    type: 3}
-  m_PrefabInstance: {fileID: 1606612792}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1752111384
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752111381}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b7f65eb999a14e141b20bf21cb138374, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1938916688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -540,11 +504,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6055707480482972008, guid: 72807f0bba4fc9f4d891747a123e6eff,
-        type: 3}
-      propertyPath: things.Array.data[0]
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72807f0bba4fc9f4d891747a123e6eff, type: 3}

@@ -35,6 +35,6 @@ public class Invintory : MonoBehaviour
 
     public void GameEnd()
     {
-        SceneManager.LoadScene("Main_Menu");
+        SceneManager.LoadScene("GameOver");
     }
 }

@@ -56,11 +56,15 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        GameObject newItem = null;
+        int itemid;
+
         
-        if(other.tag == "Invintory_Item")
+        if (other.tag == "Invintory_Item")
         {
-           
-            //GM.GetComponent<Invintory>().getItem(1);
+            newItem = other.gameObject;
+            itemid = newItem.GetComponent<Item>().id;
+            GM.GetComponent<Invintory>().getItem(itemid);
             Destroy(other.gameObject);
             //other.transform.position = new Vector2(0, 5000);
         }

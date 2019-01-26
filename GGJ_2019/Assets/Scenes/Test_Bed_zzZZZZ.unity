@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 248238274}
   - component: {fileID: 248238273}
   - component: {fileID: 248238272}
+  - component: {fileID: 248238275}
   m_Layer: 0
   m_Name: White Block PlaceHolder (1)
   m_TagString: Invintory_Item
@@ -528,6 +529,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248238275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248238271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb03cae9885764c4699f2a6f1c989e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
 --- !u!1 &284406510
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +733,7 @@ GameObject:
   - component: {fileID: 659075051}
   - component: {fileID: 659075050}
   - component: {fileID: 659075052}
+  - component: {fileID: 659075053}
   m_Layer: 0
   m_Name: White Block PlaceHolder
   m_TagString: Invintory_Item
@@ -814,6 +829,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &659075053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659075049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb03cae9885764c4699f2a6f1c989e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
 --- !u!1 &1006883428
 GameObject:
   m_ObjectHideFlags: 0

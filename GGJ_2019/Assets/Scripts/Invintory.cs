@@ -7,8 +7,8 @@ public class Invintory : MonoBehaviour
    
     public int number_of_things = 1;
 
-    public bool[] things; 
-
+    public bool[] things;
+    public GameObject[] UI_itemshow;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class Invintory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+      
     }
 
     public void getItem(int invintoryItemID)
@@ -28,7 +28,10 @@ public class Invintory : MonoBehaviour
         
         
             things[invintoryItemID] = true;
+
+        UI_itemshow[invintoryItemID].SetActive(true);
         
+
         
     }
 }

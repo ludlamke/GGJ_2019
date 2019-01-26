@@ -1,9 +1,13 @@
 fileFormatVersion: 2
-guid: d52364aa443c01041977375b1112dddb
+guid: f50d3b51d3f6bdc499742cac0a97f133
 TextureImporter:
   fileIDToRecycleName:
-    21300000: GGJ19_Items_0
-    21300002: GGJ19_Items_1
+    21300000: GGJ19_Char_0
+    21300002: GGJ19_Char_1
+    21300004: GGJ19_Char_2
+    21300006: GGJ19_Char_3
+    21300008: GGJ19_Char_4
+    21300010: GGJ19_Char_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -108,41 +112,101 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GGJ19_Items_0
+      name: GGJ19_Char_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 22
+        x: 4
+        y: 35
         width: 7
-        height: 7
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aa0d117d901b4f4ea066f0ccac0e0c0
+      spriteID: 8aef9ba945c36634fb8ff9b56cae1797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GGJ19_Items_1
+      name: GGJ19_Char_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
-        width: 13
-        height: 13
+        x: 20
+        y: 35
+        width: 7
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26f5da1384d52a64d81d6b3b35c1373f
+      spriteID: 2e9d73fdf0f20d34db73c4e98b37fe29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGJ19_Char_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 19
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b07ef77c2f30994ebe15f207640cdea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGJ19_Char_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef8ae4fd0eb8f342a79f690ccd2b02f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGJ19_Char_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 19
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbdfff992d34fb442970f2694b0c79cd
       vertices: []
       indices: 
       edges: []
@@ -150,7 +214,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 46c5f65d34ae1074fb0b5c42d76523a8
+    spriteID: 2e52c47713dcc2545bd876f89b85c489
     vertices: []
     indices: 
     edges: []

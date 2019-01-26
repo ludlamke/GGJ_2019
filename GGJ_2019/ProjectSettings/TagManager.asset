@@ -40,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Lighting
+    uniqueID: 413402515
+    locked: 0
+  - name: Background
+    uniqueID: 2928548699
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

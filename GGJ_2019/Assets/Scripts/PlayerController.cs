@@ -13,9 +13,12 @@ public class PlayerController : MonoBehaviour
     public bool use;
 
     public bool end_game;
+    public bool invintoryInReatch;
     [SerializeField] private float jumpForce;
     [SerializeField] private float speed;
 
+    GameObject newItem = null;
+    int itemid;
 
     Vector2 moveVector;
     Rigidbody2D rgb2d;
@@ -58,20 +61,27 @@ public class PlayerController : MonoBehaviour
 
         //Jump
         if (jump && groundDetect.isGrounded) { rgb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); };
+
+        if(invintoryInReatch && use == true)
+        {
+            GM.GetComponent<Invintory>().getItem(itemid);
+            Destroy(newItem);
+            newItem = null;
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        GameObject newItem = null;
-        int itemid;
-
+       
+        
         
         if (other.tag == "Invintory_Item")
         {
+            invintoryInReatch = true;
             newItem = other.gameObject;
             itemid = newItem.GetComponent<Item>().id;
-            GM.GetComponent<Invintory>().getItem(itemid);
-            Destroy(other.gameObject);
+           
+            
             //other.transform.position = new Vector2(0, 5000);
         }
 
@@ -81,5 +91,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+
+
+
+        if (other.tag == "Invintory_Item")
+        {
+            invintoryInReatch = false;
+            newItem = null;
+            
+                
+
+            //other.transform.position = new Vector2(0, 5000);
+        }
+
+       
+    }
+
 }

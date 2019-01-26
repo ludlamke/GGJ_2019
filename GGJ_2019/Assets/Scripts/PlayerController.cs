@@ -18,10 +18,12 @@ public class PlayerController : MonoBehaviour
     Vector2 moveVector;
     Rigidbody2D rgb2d;
 
+    public GameObject GM;
     // Start is called before the first frame update
     void Start()
     {
         rgb2d = GetComponent<Rigidbody2D>();
+        GM = GameObject.Find("Game_maniger");
     }
 
     // Update is called once per frame
@@ -51,4 +53,15 @@ public class PlayerController : MonoBehaviour
         //Jump
         if (jump) { rgb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); Debug.Log("Jumped"); };
     }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Invintory_Item")
+        {
+            GM.GetComponent<Invintory>().getItem();
+            Destroy(other);
+        }
+    }
+
+    
 }

@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Invintory : MonoBehaviour
 {
-    public GameObject[] things;
+   
     public int number_of_things = 0;
+
+    public GameObject[] things;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,7 @@ public class Invintory : MonoBehaviour
     {
         
         number_of_things = number_of_things + 1;
-        things = new GameObject[number_of_things];
+        
         
             things[number_of_things - 1] = invintoryItem;
         

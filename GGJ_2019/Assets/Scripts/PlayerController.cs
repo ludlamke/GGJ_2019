@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour
     bool jump;
     bool use;
 
-    public float jumpForce;
-    public float speed;
+    public bool end_game;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private float speed;
+
 
     Vector2 moveVector;
     Rigidbody2D rgb2d;
@@ -58,9 +60,14 @@ public class PlayerController : MonoBehaviour
         if(other.tag == "Invintory_Item")
         {
            
-            //GM.GetComponent<Invintory>().getItem();
+            //GM.GetComponent<Invintory>().getItem(1);
             Destroy(other.gameObject);
             //other.transform.position = new Vector2(0, 5000);
+        }
+
+        if(other.tag == "bed" && end_game)
+        {
+            GM.GetComponent<Invintory>().GameEnd();
         }
     }
 

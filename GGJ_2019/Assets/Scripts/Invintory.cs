@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Invintory : MonoBehaviour
 {
    
@@ -31,7 +31,10 @@ public class Invintory : MonoBehaviour
 
         UI_itemshow[invintoryItemID].SetActive(true);
         
+    }
 
-        
+    public void GameEnd()
+    {
+        SceneManager.LoadScene("Main_Menu");
     }
 }

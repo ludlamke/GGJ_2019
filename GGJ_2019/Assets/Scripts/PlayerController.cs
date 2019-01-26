@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     Vector2 moveVector;
     Rigidbody2D rgb2d;
+    RayCastDetector groundDetect;
 
     public GameObject GM;
     // Start is called before the first frame update
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         rgb2d = GetComponent<Rigidbody2D>();
         GM = GameObject.Find("Game_maniger");
+        groundDetect = GetComponent<RayCastDetector>();
     }
 
     // Update is called once per frame
@@ -51,7 +53,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(moveVector * speed);
 
         //Jump
-        if (jump) { rgb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); };
+        if (jump && groundDetect.isGrounded) { rgb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); };
     }
 
     public void OnTriggerEnter2D(Collider2D other)

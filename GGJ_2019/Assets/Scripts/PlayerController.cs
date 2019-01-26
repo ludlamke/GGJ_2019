@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     public bool end_game;
     public bool invintoryInReatch;
+    public bool indoorreatch;
     [SerializeField] private float jumpForce;
     [SerializeField] private float speed;
 
@@ -68,6 +69,12 @@ public class PlayerController : MonoBehaviour
             Destroy(newItem);
             newItem = null;
         }
+
+        if (indoorreatch && GM.GetComponent<Invintory>().things[1] == true && use == true)
+        {
+            Destroy(newItem);
+            newItem = null;
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -85,7 +92,13 @@ public class PlayerController : MonoBehaviour
             //other.transform.position = new Vector2(0, 5000);
         }
 
-        if(other.tag == "bed" && end_game)
+        if (other.tag == "door")
+        {
+            indoorreatch = true;
+            newItem = other.gameObject;
+        }
+
+        if (other.tag == "bed" && end_game)
         {
             GM.GetComponent<Invintory>().GameEnd();
         }
@@ -102,12 +115,17 @@ public class PlayerController : MonoBehaviour
             invintoryInReatch = false;
             newItem = null;
             
-                
-
             //other.transform.position = new Vector2(0, 5000);
         }
 
-       
+    if (other.tag == "door")
+        {
+            indoorreatch = false;
+            newItem = null;
+        }
+
     }
+
+    
 
 }

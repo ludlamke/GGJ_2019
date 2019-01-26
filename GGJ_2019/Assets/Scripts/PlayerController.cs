@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     bool up;
     bool down;
     bool jump;
-    bool use;
+    public bool use;
 
     public bool end_game;
     [SerializeField] private float jumpForce;
@@ -33,6 +33,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //refresh one shot inputs
+        jump = false;
+        use = false;
+
         //Get Inputs
         left = Input.GetKey(KeyCode.LeftArrow);
         right = Input.GetKey(KeyCode.RightArrow);

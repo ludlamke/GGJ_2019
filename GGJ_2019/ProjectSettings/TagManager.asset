@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Invintory_Item
   - bed
+  - FlashLight
   layers:
   - Default
   - TransparentFX

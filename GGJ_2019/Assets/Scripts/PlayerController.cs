@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     RayCastDetector groundDetect;
 
     public GameObject GM;
+
     // Start is called before the first frame update
     void Start()
     {

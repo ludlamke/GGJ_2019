@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]public bool down;
     [HideInInspector]public bool jump;
     [HideInInspector]public bool use;
+    [HideInInspector]public bool isActive;
 
     public bool end_game;
     public bool invintoryInReatch;
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
         rgb2d = GetComponent<Rigidbody2D>();
         GM = GameObject.Find("Game_maniger");
         groundDetect = GetComponent<RayCastDetector>();
+        isActive = true;
     }
 
     // Update is called once per frame
@@ -43,12 +45,16 @@ public class PlayerController : MonoBehaviour
         use = false;
 
         //Get Inputs
+        if(isActive == true)
+        {
         left = Input.GetKey(KeyCode.LeftArrow);
         right = Input.GetKey(KeyCode.RightArrow);
         up = Input.GetKey(KeyCode.UpArrow);
         down = Input.GetKey(KeyCode.DownArrow);
         jump = Input.GetKeyDown(KeyCode.Space);
         use = Input.GetKeyDown(KeyCode.RightControl);
+        }
+        
 
         //Update move vector
         //Zero

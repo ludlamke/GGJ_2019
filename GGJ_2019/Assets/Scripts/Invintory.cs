@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 public class Invintory : MonoBehaviour
 {
    
@@ -9,10 +10,12 @@ public class Invintory : MonoBehaviour
 
     public bool[] things;
     public GameObject[] UI_itemshow;
+    public AudioSource asorse;
+    public AudioClip door;
     // Start is called before the first frame update
     void Start()
     {
-        
+        asorse = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

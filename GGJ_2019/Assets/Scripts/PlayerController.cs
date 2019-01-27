@@ -74,7 +74,13 @@ public class PlayerController : MonoBehaviour
         if (indoorreatch && GM.GetComponent<Invintory>().things[1] == true && use == true)
         {
             Destroy(newItem);
+            GM.GetComponent<Invintory>().asorse.PlayOneShot(GM.GetComponent<Invintory>().door);
             newItem = null;
+        }
+
+        if (end_game && use == true)
+        {
+            GM.GetComponent<Invintory>().GameEnd();
         }
     }
 
@@ -99,9 +105,10 @@ public class PlayerController : MonoBehaviour
             newItem = other.gameObject;
         }
 
-        if (other.tag == "bed" && end_game)
+        if (other.tag == "teddy")
         {
-            GM.GetComponent<Invintory>().GameEnd();
+            end_game = true;
+           // GM.GetComponent<Invintory>().GameEnd();
         }
     }
 
@@ -123,6 +130,12 @@ public class PlayerController : MonoBehaviour
         {
             indoorreatch = false;
             newItem = null;
+        }
+
+        if (other.tag == "teddy")
+        {
+            end_game = false;
+            
         }
 
     }

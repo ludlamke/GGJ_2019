@@ -8,6 +8,7 @@ TagManager:
   - bed
   - FlashLight
   - door
+  - teddy
   layers:
   - Default
   - TransparentFX

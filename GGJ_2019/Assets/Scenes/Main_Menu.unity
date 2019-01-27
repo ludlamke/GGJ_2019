@@ -395,7 +395,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'arrow keys: move Player
 
-    Spacebar: jupmp
+    Spacebar: jump
 
     RightCTRL: to interact with items'
 --- !u!222 &1172802764

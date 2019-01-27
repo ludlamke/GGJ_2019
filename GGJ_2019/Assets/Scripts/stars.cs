@@ -55,14 +55,16 @@ public class stars : MonoBehaviour
 
     IEnumerator WaitForreset()
     {
-        
-        player.SetActive(false);
+
+        //player.SetActive(false);
+        player.GetComponent<PlayerController>().isActive = false;
         Asourse.PlayOneShot(walkStars);
         fade.SetActive(true);
         yield return new WaitForSeconds(adiogap - 3);
         fade.SetActive(false);
         Asourse.Stop();
         player.transform.position = otherstarslocation;
-        player.SetActive(true);
+        player.GetComponent<PlayerController>().isActive = true;
+        // player.SetActive(true);
     }
 }

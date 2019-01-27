@@ -7,6 +7,7 @@ public class stars : MonoBehaviour
 
     public GameObject otherstars;
     public GameObject player;
+    public GameObject fade;
     public Vector2 otherstarslocation;
     public bool isusingstars;
     public AudioClip walkStars;
@@ -17,6 +18,7 @@ public class stars : MonoBehaviour
     {
         Asourse = GetComponent<AudioSource>();
         adiogap = walkStars.length;
+        fade.SetActive(false);
     }
 
     // Update is called once per frame
@@ -54,7 +56,10 @@ public class stars : MonoBehaviour
     IEnumerator WaitForreset()
     {
         Asourse.PlayOneShot(walkStars);
-        yield return new WaitForSeconds(adiogap);
+        fade.SetActive(true);
+        yield return new WaitForSeconds(adiogap - 3);
+        fade.SetActive(false);
+        Asourse.Stop();
         player.transform.position = otherstarslocation;
     }
 }

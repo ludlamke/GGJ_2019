@@ -20,14 +20,15 @@ public class FlashLight : MonoBehaviour
     // Update is called once per frame
     void Update(){
 
-        if(player.use && inventory.things[0]) {
-            if (!on) {
+        if(inventory.things[0]) {
+            //if (!on) {
                 flashLight.enabled = true;
-                on = true;
-            } else {
-                flashLight.enabled = false;
-                on = false;
-            }
+                //on = true;
+            //} 
+            //else {
+            //    flashLight.enabled = false;
+            //    on = false;
+            //}
         }
 
 

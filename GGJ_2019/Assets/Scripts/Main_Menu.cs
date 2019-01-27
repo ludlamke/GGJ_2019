@@ -8,7 +8,7 @@ public class Main_Menu : MonoBehaviour
 {
     [SerializeField] private AudioSource ASorce;
     [SerializeField] private AudioClip button_Click;
-    [SerializeField] private float play_lenth;
+     private float play_lenth;
     // Start is called before the first frame update
     void Start()
     {

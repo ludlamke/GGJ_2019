@@ -5,54 +5,48 @@ using UnityEngine.Audio;
 public class stars : MonoBehaviour
 {
 
-    public GameObject otherstars;
+    public Transform otherStairs;
     public GameObject player;
     public GameObject fade;
    
-    public Vector2 otherstarslocation;
-    public bool isusingstars;
-    public AudioClip walkStars;
-    public AudioSource Asourse;
-    private float adiogap;
+    public bool readyToUse;
+    public AudioClip walkStairs;
+    public AudioSource auSource;
+    private float audioGap;
     public GameObject GM;
     // Start is called before the first frame update
     void Start()
     {
-        Asourse = GetComponent<AudioSource>();
-        adiogap = walkStars.length;
+        auSource = GetComponent<AudioSource>();
+        audioGap = walkStairs.length;
         fade.SetActive(false);
         GM = GameObject.Find("Game_maniger");
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player.GetComponent<PlayerController>().use == true && isusingstars)
+        //if Player is near door and "uses" teleport
+        if (player.GetComponent<PlayerController>().use && readyToUse)
         {
-            player.GetComponent<PlayerController>().use = false;
-           
             StartCoroutine(WaitForreset());
-            
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.gameObject == player)
         {
-            isusingstars = true;
-            player = other.gameObject;
-            otherstarslocation = otherstars.transform.position;
+            readyToUse = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject == player)
         {
-            isusingstars = true;
-            player = null;
-            otherstarslocation = gameObject.transform.position;
+            readyToUse = false;
         }
     }
 
@@ -60,13 +54,12 @@ public class stars : MonoBehaviour
     {
 
         //player.SetActive(false);
-        player.GetComponent<PlayerController>().isActive = false;
-        Asourse.PlayOneShot(walkStars);
+        auSource.PlayOneShot(walkStairs);
         fade.SetActive(true);
-        yield return new WaitForSeconds(adiogap - 3);
+        yield return new WaitForSeconds(audioGap - 3);
         fade.SetActive(false);
-        Asourse.Stop();
-        player.transform.position = otherstarslocation;
+        auSource.Stop();
+        player.transform.position = otherStairs.position;
         if (GM.GetComponent<Invintory>().asorse.isPlaying)
         {
             GM.GetComponent<Invintory>().asorse.Stop();
@@ -77,8 +70,5 @@ public class stars : MonoBehaviour
             GM.GetComponent<Invintory>().asorse2.Stop();
             GM.GetComponent<Invintory>().asorse.Play();
         }
-        player.GetComponent<PlayerController>().isActive = true;
-       
-        // player.SetActive(true);
     }
 }

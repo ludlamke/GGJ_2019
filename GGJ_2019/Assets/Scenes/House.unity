@@ -513,6 +513,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &159421991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 686883314353520492, guid: 4e49506a74d1c7a46b0c9dc7f9c272ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1796138146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &162905717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,6 +2672,21 @@ PrefabInstance:
       propertyPath: fade
       value: 
       objectReference: {fileID: 618163667}
+    - target: {fileID: 2718224232621579211, guid: 9e93980cd7ee9224f83141ea93809ba7,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 159421991}
+    - target: {fileID: 2718224232621579211, guid: 9e93980cd7ee9224f83141ea93809ba7,
+        type: 3}
+      propertyPath: otherStairs
+      value: 
+      objectReference: {fileID: 3899454626209038497}
+    - target: {fileID: 2718224232621579211, guid: 9e93980cd7ee9224f83141ea93809ba7,
+        type: 3}
+      propertyPath: walkStairs
+      value: 
+      objectReference: {fileID: 8300000, guid: d77c2f64274559841aae4fe65a646ae6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e93980cd7ee9224f83141ea93809ba7, type: 3}
 --- !u!1001 &723018888
@@ -3102,6 +3123,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &751565805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 214308472074084132, guid: 9e93980cd7ee9224f83141ea93809ba7,
+    type: 3}
+  m_PrefabInstance: {fileID: 722094651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &757254424
 GameObject:
   m_ObjectHideFlags: 0
@@ -7418,7 +7445,7 @@ SpriteRenderer:
   m_Size: {x: 7.2, y: 9.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1771449847
@@ -9114,6 +9141,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &3899454626209038497 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 214308472074084132, guid: 9e93980cd7ee9224f83141ea93809ba7,
+    type: 3}
+  m_PrefabInstance: {fileID: 9006990505704056265}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4581530724268353444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9497,5 +9530,20 @@ PrefabInstance:
       propertyPath: fade
       value: 
       objectReference: {fileID: 618163667}
+    - target: {fileID: 2718224232621579211, guid: 9e93980cd7ee9224f83141ea93809ba7,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 159421991}
+    - target: {fileID: 2718224232621579211, guid: 9e93980cd7ee9224f83141ea93809ba7,
+        type: 3}
+      propertyPath: walkStairs
+      value: 
+      objectReference: {fileID: 8300000, guid: 48e82f5c0ad7a3b4f86ab4072feed8d2, type: 3}
+    - target: {fileID: 2718224232621579211, guid: 9e93980cd7ee9224f83141ea93809ba7,
+        type: 3}
+      propertyPath: otherStairs
+      value: 
+      objectReference: {fileID: 751565805}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e93980cd7ee9224f83141ea93809ba7, type: 3}

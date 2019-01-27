@@ -1595,6 +1595,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panSpeed: 500
+  yOffset: 0
+  xOffset: 0
   target: {fileID: 1676711981}
   trackMode: 0
 --- !u!20 &519420031
@@ -4032,7 +4034,7 @@ PrefabInstance:
     - target: {fileID: 7141642104682263104, guid: 2b06f3d0099ec3d44963646f9caaff1d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7141642104682263104, guid: 2b06f3d0099ec3d44963646f9caaff1d,
         type: 3}
@@ -7264,12 +7266,12 @@ PrefabInstance:
     - target: {fileID: 7141642104682263104, guid: 2b06f3d0099ec3d44963646f9caaff1d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.025
+      value: -51
       objectReference: {fileID: 0}
     - target: {fileID: 7141642104682263104, guid: 2b06f3d0099ec3d44963646f9caaff1d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0601
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7141642104682263104, guid: 2b06f3d0099ec3d44963646f9caaff1d,
         type: 3}

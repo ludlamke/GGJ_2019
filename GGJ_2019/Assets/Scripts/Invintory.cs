@@ -11,11 +11,12 @@ public class Invintory : MonoBehaviour
     public bool[] things;
     public GameObject[] UI_itemshow;
     public AudioSource asorse;
+    public AudioSource asorse2;
     public AudioClip door;
     // Start is called before the first frame update
     void Start()
     {
-        asorse = GetComponent<AudioSource>();
+        //asorse = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

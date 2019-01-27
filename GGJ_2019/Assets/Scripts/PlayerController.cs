@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
         if (indoorreatch && GM.GetComponent<Invintory>().things[1] == true && use == true)
         {
             Destroy(newItem);
+            
             GM.GetComponent<Invintory>().asorse.PlayOneShot(GM.GetComponent<Invintory>().door);
             newItem = null;
         }

@@ -603,7 +603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.5, y: 139.7}
+  m_AnchoredPosition: {x: 16.6, y: 121.2}
   m_SizeDelta: {x: 317.6, y: 56.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1821292786
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 49
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 49
@@ -639,7 +639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GGJ 2019 end
+  m_Text: sleep tight
 --- !u!222 &1821292787
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -753,8 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ASorce: {fileID: 0}
-  button_Click: {fileID: 8300000, guid: 1dce801124a26a84a92fa12a552101ab, type: 3}
-  play_lenth: 0
+  button_Click: {fileID: 8300000, guid: 64def6bd3d0b7774c9df770a9f2b6f68, type: 3}
 --- !u!4 &2106921996
 Transform:
   m_ObjectHideFlags: 0
@@ -779,7 +778,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fd35126106f043944805661ccd767613, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dd9be0fe70750b04ea823ab6976379cb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
